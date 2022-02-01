@@ -1,5 +1,5 @@
 # Discord-Bot_Python
-ArryGs Bot is a python to make a multi-purpose discord bot as a test.
+ArryGs Bot is a python to make a multi-purpose discord bot for fun.
 
 The program is still being updated occasionally
 
@@ -13,6 +13,7 @@ Features
         ◦ Names of certain people with A respectful/ disrespectful message
         ◦ Dad Bot 
     • Shows the current time using discord activity.
+    • When a message is deleted, the bot responds with a preset prompt. Works when someone tries to delete the prompt also.
 
 Acknowledgement 
 
