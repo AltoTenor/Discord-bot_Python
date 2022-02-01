@@ -1,4 +1,4 @@
-# Discord-bot_Arrygs-Bot
+# Discord-Bot_Python
 A simple bot made using python module Discord.py 
 -to fetch google results
 -reply with given answers to prompts
