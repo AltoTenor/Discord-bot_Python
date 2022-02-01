@@ -8,8 +8,6 @@ from datetime import datetime
 import time
 import asyncio
 
-loop = asyncio.get_event_loop()
-
 client = discord.Client()
 
 now = datetime.now()
@@ -38,8 +36,9 @@ async def on_message(mssg):
         
     if mssg.author == client.user:
       return
-    else:
-      await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=datetime.now().strftime("%H:%M:%S")))
+
+    #TIME
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=datetime.now().strftime("%H:%M:%S")))
     #QUOTES
     if mssg.content.startswith('quotes<'):
       q=get_quote()
@@ -64,7 +63,7 @@ async def on_message(mssg):
       if word in mssg.content.lower():
         await mssg.channel.send('SHUT THE F UP DAD BOT')
 
-
+#A Few more time resets
 @client.event
 async def on_group_join():
   await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=datetime.now().strftime("%H:%M:%S")))
@@ -72,15 +71,12 @@ async def on_group_join():
 async def on_group_remove():
   await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=datetime.now().strftime("%H:%M:%S")))
 @client.event
-async def on_message_delete(mssg):
-  if 'hi' in mssg:
-    await mssg.channel.send('GOD SAW WHAT U DELETED')
+
+#mssg on deletion
+async def on_message_delete(message):
+  await message.channel.send('God saw what you deleted. AMEN. ')
   
 client.run(('OTI3NDc1MDg0MDY5ODUxMTk4.YdKwew.UBKxVaxYEpL_aQByZHTn82PVIIg'))
-
-my_background_task()
-
-
 
 
 
