@@ -78,7 +78,7 @@ async def on_message_delete(message):
   
 client.run(('OTI3NDc1MDg0MDY5ODUxMTk4.YdKwew.UBKxVaxYEpL_aQByZHTn82PVIIg'))
 
-
+#change
 
 
 
