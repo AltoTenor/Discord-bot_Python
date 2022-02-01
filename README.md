@@ -17,16 +17,17 @@ Features
 Acknowledgement 
 
 The following modules are used-
-    1. googlio
-           googlio is a user defined module to fetch google results using python google module.
-    2. discord
-    3. discord.ext import tasks
-    4. os
-    5. requests
-    6. json
-    7. datetime import datetime
-    8. time
-    9. asyncio
+
+        1. googlio
+               googlio is a user defined module to fetch google results using python google module.
+        2. discord
+        3. discord.ext import tasks
+        4. os
+        5. requests
+        6. json
+        7. datetime import datetime
+        8. time
+        9. asyncio
 
 Documentations
 Discord.py
