@@ -7,6 +7,7 @@ import googlio
 from datetime import datetime
 import time
 import asyncio
+import token from token 
 
 client = discord.Client()
 
@@ -76,7 +77,7 @@ async def on_group_remove():
 async def on_message_delete(message):
   await message.channel.send('God saw what you deleted. AMEN. ')
   
-client.run(('OTI3NDc1MDg0MDY5ODUxMTk4.YdKwew.UBKxVaxYEpL_aQByZHTn82PVIIg'))
+client.run((token))
 
 
 
