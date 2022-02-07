@@ -77,7 +77,7 @@ async def on_group_remove():
 async def on_message_delete(message):
   await message.channel.send('God saw what you deleted. AMEN. ')
   
-client.run((token))
+client.run(('token'))
 
 
 
